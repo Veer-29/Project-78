@@ -1,0 +1,28 @@
+img{
+    width: 300px;
+    height: 400px;
+}
+#Name_Display{
+font-size: 30px;
+font-style: italic;
+color: blue;
+font-weight: bold;
+}
+h1{
+font-size: 50px;
+}
+#Information{
+font-size: 25px;
+font-style: italic;
+color: orchid;
+font-weight: bold;   
+}
+button{
+    font-size: x-large;
+    color: black;
+    background-color: grey;
+    border-radius: 40px;
+    box-shadow: blue;
+    border-width: 10px;
+    font-weight: bold;
+}

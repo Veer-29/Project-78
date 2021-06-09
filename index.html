@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <center>
+            <div>
+                <h1 style="background-color: blue; color: aqua;border-radius: 40px;font-family: algerian;">My Family Book</h1>
+                <img id="photo" src="https://i.pinimg.com/originals/00/67/8c/00678c2b5ed4661958f5437f0f8f0513.jpg">
+                <br>
+                <br>
+                <label id="Name_Display"></label>
+                 <br>
+                 <label id="Information"></label>
+                <br>
+                <br>
+                <button id="next_button" onclick="update()">NEXT</button>
+            </div> 
+        </center>
+    </body>
+
+    <script>
+        var names=["Family","Mahesh Parab","Vidya Parab","Veer Parab"];
+        
+        var images=["https://cdn1.vectorstock.com/i/1000x1000/37/45/parents-and-son-holding-hands-vector-18003745.jpg",
+        "https://i.pinimg.com/564x/ff/59/f8/ff59f8ad5f12999becd325970aab3a57.jpg",
+    "https://i.pinimg.com/736x/c1/a9/b2/c1a9b2512b29182b99fa3052c5f37e85.jpg",
+"https://i.pinimg.com/originals/3a/b2/f9/3ab2f978bd212f89ae0d5a9b8062d1d4.jpg"];
+        
+var inf=["Small and Sweet family. I love my family",
+"My father is a much disciplined and dutiful person.My father is the best friend and a real advisor of me in my life.",
+"I am truly my mother’s son.My mom is definitely my rock.","This is myself. I am cool na.."]
+
+        var i=0;
+        function update(){
+                document.getElementById("photo").src=images[i];
+                document.getElementById("Name_Display").innerHTML=names[i];
+                document.getElementById("Information").innerHTML=inf[i];
+                i++;
+
+                if(i == 4)
+                {
+                    i=0;
+                }
+        }
+
+    </script>
+</html>
